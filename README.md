@@ -28,35 +28,28 @@ A .NET 8-based microservice that fetches real-time weather data for a city using
 ## Setup Instructions
 
 1. Clone the repository:
+   ```bash
    git clone https://github.com/yourusername/weather-microservice.git
    cd weather-microservice
-2.Open the solution file WeatherMicroservice.sln in Visual Studio or VS Code.
-3.Add your OpenWeatherMap API Key in appsettings.json:
-{
-  "WeatherApiKey": "YOUR_API_KEY"
-}
-1. API Endpoints
+2. Open the solution file WeatherMicroservice.sln in Visual Studio or VS Code
+3. Add your OpenWeatherMap API Key in appsettings.json:
+   ```bash
+   {
+     "ApiKey": "YOUR_API_KEY",
+      "EndpointBaseUrl": "https://api.openweathermap.org/data/2.5/weather"
+   }
+4. API Endpoints
 GET /api/Weather/{city}: Fetch weather data for a city. Example response:
-json
+   ```bash
+   {
+     "city": "London",
+     "temperature": 16.5,
+     "description": "light rain"
+   }
+5. Testing
+   Run all tests with:
+   ```bash
+   dotnet test
 
-{
-  "city": "London",
-  "temperature": 16.5,
-  "description": "light rain"
-}
-Testing
-Run all tests with:
-
-dotnet test
-Contributing
-Fork the repository.
-Create a new branch:
-
-git checkout -b feature-name
-Make your changes and commit:
-
-git commit -m "Add new feature"
-Push and create a Pull Request.
-License
+## License
 This project is licensed under the MIT License.
-
