@@ -1,0 +1,64 @@
+# .NET Core/ASP.NET Core
+bin/
+obj/
+*.dll
+*.exe
+*.log
+*.vs/
+.vscode/
+*.user
+*.lock.json
+*.config
+*.csproj.user
+appsettings*.json
+
+# Visual Studio
+.vs/
+.vscode/
+.vscode-test/
+
+# Build Directories
+artifacts/
+build/
+builds/
+publish/
+
+# Logs
+*.log
+*.tlog
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+
+# Auto-generated files
+Generated_Code/
+
+# NuGet packages
+*.nupkg
+.nuget/
+packages/
+
+# Test results
+TestResults/
+.trx
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+
+# Dependency files
+project.lock.json
+project.fragment.lock.json
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Sensitive files
+secrets.json
+.env
